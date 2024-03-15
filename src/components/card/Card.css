@@ -1,0 +1,35 @@
+.card {
+ position: relative;
+  width: 650px;;
+  height: 110px;
+  margin: 10px;
+  border: 0.5px solid #000000;
+  border-radius: 8px;
+  display:inline-flex;
+  margin-left:70px;
+}
+.card__image {
+  flex: 0 0 auto;
+  padding: 5px; /* Add padding to create space around the image */
+}
+
+.card__image img {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  border-radius:5px;
+}
+
+.card__content {
+  flex: 1;
+  padding: 0 10px;
+  display: flex;
+  align-items: center; /* Align content vertically in the center */
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align:center;
+  margin:0px 10px 40px 10px; /* Remove default margin */
+}

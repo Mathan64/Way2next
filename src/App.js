@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Nav from "./components/nav/Nav";
+import Card from "./components/card/Card";
+import Mpage from "./components/mpage/Mpage";
+const App = () => {
+  const cname="mahendra engineering college";
+  const cardData = [`${cname}`,`${cname}` , `${cname}`,`${cname}`,`${cname}`,`${cname}`,`${cname}`,`${cname}`]; // Add more card titles as needed
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav/>
+      <div>
+      {cardData.map((cardTitle, index) => (
+        <Card key={index} cardTitle={cardTitle} />
+      ))}
+    </div>
+    <Mpage/>
     </div>
   );
-}
+};
 
 export default App;
