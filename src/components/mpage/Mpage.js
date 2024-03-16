@@ -1,18 +1,18 @@
 import React from 'react';
 import './Mpage.css';
-import prevIcon from './iconsforp/pp.png';
-import nextIcon from './iconsforp/np.png';
+import { GrFormPrevious } from "react-icons/gr";
+import { GrFormNext } from "react-icons/gr";
 const Pagination = ({ text, onPrevClick, onNextClick }) => {
   return (
     <div className="pag">
       <div className="pag_pre" onClick={onPrevClick}>
-        <img src={prevIcon} alt="Previous" />
+        <GrFormPrevious/>
       </div>
       <div className="pag_text">
-        {'page 1'}
+        {'<page 1>'}
       </div>
       <div className="pag_next" onClick={onNextClick}>
-        <img src={nextIcon} alt="Next" />
+        <GrFormNext/>
       </div>
     </div>
   );
