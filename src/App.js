@@ -5,7 +5,7 @@ import Card from "./components/card/Card";
 import Mpage from "./components/mpage/Mpage";
 
 const App = () => {
-  const API_URL = 'http://localhost:3500/items';
+  const API_URL = 'https://way2next.onrender.com/api/v1/college'||[];
   const [itemsList, setItemsList] = useState([]);
   const [searchInput, setSearchInput] = useState('');
 
