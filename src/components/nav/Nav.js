@@ -38,12 +38,9 @@ const Navbar = ({ searchInput, setSearchInput }) => {
               ref={inputRef}
               onChange={handleSearchInputChange}
               placeholder="Search for college..." />
-            <button>
               <div className='sicon' onClick={() => inputRef.current.focus()}>
-                <FaSearch />
+                <FaSearch/>
               </div>
-            </button>
-            <div></div>
           </div>
           <div className='uicon' onClick={() => Change("mathan")}>
             <FaUserGraduate />

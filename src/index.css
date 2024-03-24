@@ -1,13 +1,183 @@
+
 body {
+  margin:0;
+}
+/* Global Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border-block:box-border;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar Styles */
+.navbar {
+  background-color: rgb(10, 16, 87);
+  color: white;
+  padding: 0.1rem;
+  min-width:fit-content;
+  background-size:100%;
+display: grid;}
+
+/* Container Styles */
+.container {
+  display: grid;
+  grid-template-columns:0.5fr 0.2fr;
+}
+/* Navbar Brand Styles */
+.navbar__brand {
+  font-size: 1.5rem; 
+  place-content:start;
+  margin:2%;
+  padding:1rem;
+}
+.ipro{
+  display: flex;
+}
+/* Span Styles */
+span {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(255, 230, 9);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Search Styles */
+.search {
+  background-color: rgb(255, 255, 255);
+  background-size: 100%;
+  border-radius: 10px;
+  display: flex;
+  place-content:center;
+}
+
+/* Search Button Focus Styles */
+.navbar__search button:focus{
+  outline: none;
+}
+
+/* Input Focus Styles */
+input:focus {
+  outline:none;
+}
+
+/* Search Icon Styles */
+.fa-search {
+  font-size: 1rem;
+}
+
+/* Navbar Search Styles */
+.navbar__search {
+  display: flex; 
+place-items:center;
+}
+/* Navbar Search Input Styles */
+.navbar__search input[type="text"] {
+  padding: 0.5rem 30rem 0.4rem 1rem;
+  border: none;
+  border-radius: 10px;
+  margin: 1px;
+  display: block;
+}
+
+/* Navbar Search Button Styles */
+.navbar__search{
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(253, 250, 250);
+  margin-left:10%;
+}
+
+/* Search Icon Styles */
+.sicon{
+  padding: 7px 10px;
+  color: rgb(0, 0, 0);
+  font-size:1rem;
+}
+/* User Icon Styles */
+.uicon {
+  font-size: 2rem;
+  margin-left:15%;
+}
+
+/* Menu Icon Styles */
+.micon {
+  font-size: 2.5rem;
+  margin-left:10%;
+}
+
+/* Search Icon Hover Styles */
+.sicon:hover, .sicon:focus {
+  color: rgb(10, 16, 97);
+}
+.cards{
+  display: inline-flex;
+  width:45%;
+  height:auto;
+  position: relative;
+  margin:0.5% 2.4%;
+  border: 0.5px solid #000000;
+  border-radius: 8px;
+}
+.card {
+  display:grid;
+  grid-template-columns:1fr 4.5fr 1fr ;
+  grid-template-rows:2fr 1fr;
+  margin-top:10px;
+}
+.element:nth-child(4){
+place-items:center;
+grid-column:1/3;
+display: grid;
+place-content:start;
+margin-left:100px;
+}
+
+/* College Name Styles */
+.cardcollege {
+  font-size: 1.2rem;
+  color: rgb(10, 16, 87);
+  margin:5px;
+  line-height:25px;
+}
+/* College Code Styles */
+.collegecode {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 0, 242);
+}
+/* College Image Styles */
+.cimg {
+  margin: 5px 20px;
+  height:50px;
+  width: 50px;
+}
+
+/* Pagination Styles */
+.pag {
+  display: flex;
+}
+
+/* Pagination Text Styles */
+.pag_text {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 4% 35% 1% -25%;
+  color: rgb(10, 16, 87);
+}
+
+/* Pagination Next and Previous Button Styles */
+.pag_next, .pag_pre {
+  background-color: rgb(10, 16, 87);
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  margin: 3% 70% 3% 3%;
 }
